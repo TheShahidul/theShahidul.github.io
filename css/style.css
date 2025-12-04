@@ -968,20 +968,27 @@ img {
     }
     
     .navbar-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
+        position: fixed;
+        top: 70px;
         left: 0;
         right: 0;
+        width: 100%;
         background: var(--glass-bg);
         backdrop-filter: blur(12px);
         flex-direction: column;
         padding: 1rem;
         border-bottom: 1px solid var(--border-color);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity var(--transition-speed) var(--transition-curve), visibility var(--transition-speed) var(--transition-curve), transform var(--transition-speed) var(--transition-curve);
+        z-index: 999;
     }
     
     .navbar-menu.active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
     
     .mobile-menu-toggle {
