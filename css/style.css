@@ -970,25 +970,67 @@ img {
     .navbar-menu {
         position: fixed;
         top: 70px;
-        left: 0;
         right: 0;
-        width: 100%;
+        left: auto;
+        width: 280px;
+        max-width: 100%;
+        height: calc(100vh - 70px);
         background: var(--glass-bg);
         backdrop-filter: blur(12px);
+        border-left: 1px solid var(--border-color);
+        border-bottom: none;
         flex-direction: column;
-        padding: 1rem;
-        border-bottom: 1px solid var(--border-color);
+        padding: 1.5rem 0;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateX(100%);
         transition: opacity var(--transition-speed) var(--transition-curve), visibility var(--transition-speed) var(--transition-curve), transform var(--transition-speed) var(--transition-curve);
         z-index: 999;
+        overflow-y: auto;
+        box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
     }
     
     .navbar-menu.active {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(0);
+    }
+    
+    .navbar-menu li {
+        margin: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    }
+    
+    .navbar-menu .navbar-link {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: var(--text-primary);
+        text-decoration: none;
+        transition: all var(--transition-speed) var(--transition-curve);
+        border-left: 3px solid transparent;
+    }
+    
+    .navbar-menu .navbar-link:hover {
+        background: rgba(79, 70, 229, 0.1);
+        border-left-color: var(--accent-primary);
+        padding-left: 1.8rem;
+    }
+    
+    .dark .navbar-menu .navbar-link:hover {
+        background: rgba(79, 70, 229, 0.2);
+    }
+    
+    /* Mobile menu overlay backdrop */
+    .navbar-menu.active::before {
+        content: '';
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+        backdrop-filter: blur(3px);
     }
     
     .mobile-menu-toggle {

@@ -122,12 +122,42 @@ function initScrollReveal() {
 function initMobileMenu() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navbarMenu = document.querySelector('.navbar-menu');
+    const navbar = document.querySelector('.navbar');
     
     if (!mobileMenuToggle || !navbarMenu) return;
     
+    // Create a backdrop element for mobile menu
+    const menuBackdrop = document.createElement('div');
+    menuBackdrop.className = 'mobile-menu-backdrop';
+    menuBackdrop.style.cssText = `
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+        z-index: 998;
+        backdrop-filter: blur(3px);
+    `;
+    document.body.appendChild(menuBackdrop);
+    
     mobileMenuToggle.addEventListener('click', function(e) {
         e.stopPropagation();
-        navbarMenu.classList.toggle('active');
+        const isActive = navbarMenu.classList.toggle('active');
+        
+        // Toggle backdrop
+        if (isActive) {
+            menuBackdrop.style.opacity = '1';
+            menuBackdrop.style.visibility = 'visible';
+            document.body.style.overflow = 'hidden';
+        } else {
+            menuBackdrop.style.opacity = '0';
+            menuBackdrop.style.visibility = 'hidden';
+            document.body.style.overflow = '';
+        }
         
         // Toggle icon
         const icon = this.querySelector('[data-lucide]');
@@ -144,32 +174,36 @@ function initMobileMenu() {
     const navbarLinks = navbarMenu.querySelectorAll('.navbar-link');
     navbarLinks.forEach(link => {
         link.addEventListener('click', function() {
-            navbarMenu.classList.remove('active');
-            const icon = mobileMenuToggle.querySelector('[data-lucide]');
-            if (icon) {
-                icon.setAttribute('data-lucide', 'menu');
-                if (typeof lucide !== 'undefined') {
-                    lucide.createIcons();
-                }
-            }
+            closeMenu();
         });
     });
     
-    // Close menu when clicking outside
-    document.addEventListener('click', function(e) {
-        // Check if click is outside navbar
-        const navbar = document.querySelector('.navbar');
-        if (navbar && !navbar.contains(e.target) && navbarMenu.classList.contains('active')) {
-            navbarMenu.classList.remove('active');
-            const icon = mobileMenuToggle.querySelector('[data-lucide]');
-            if (icon) {
-                icon.setAttribute('data-lucide', 'menu');
-                if (typeof lucide !== 'undefined') {
-                    lucide.createIcons();
-                }
-            }
+    // Close menu when clicking backdrop
+    menuBackdrop.addEventListener('click', function() {
+        closeMenu();
+    });
+    
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && navbarMenu.classList.contains('active')) {
+            closeMenu();
         }
     });
+    
+    function closeMenu() {
+        navbarMenu.classList.remove('active');
+        menuBackdrop.style.opacity = '0';
+        menuBackdrop.style.visibility = 'hidden';
+        document.body.style.overflow = '';
+        
+        const icon = mobileMenuToggle.querySelector('[data-lucide]');
+        if (icon) {
+            icon.setAttribute('data-lucide', 'menu');
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        }
+    }
 }
 
 /* ===== INITIALIZE LUCIDE ICONS ===== */
