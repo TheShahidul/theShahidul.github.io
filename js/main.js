@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initScrollReveal();
     initMobileMenu();
     initLucideIcons();
+    initParallaxBackground();
 });
 
 /* ===== THEME TOGGLE (DARK/LIGHT MODE) ===== */
@@ -495,3 +496,18 @@ function initBackToTop() {
 
 // Initialize back to top button
 initBackToTop();
+
+/* ===== PARALLAX BACKGROUND EFFECT ===== */
+function initParallaxBackground() {
+    const heroBgImage = document.querySelector('.hero-bg-image');
+    
+    if (!heroBgImage) return;
+    
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.pageYOffset;
+        const parallaxSpeed = 0.5; // Slower movement = more parallax effect
+        
+        // Apply parallax transform
+        heroBgImage.style.transform = `translateY(${scrollPosition * parallaxSpeed}px) scale(1.05)`;
+    });
+}
