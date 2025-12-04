@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Md. Shahidul Islam Prodhan - Data Analyst, ML Enthusiast, and CSE Student specializing in Machine Learning, Data Mining, and Intelligent Systems.">
+    <meta name="keywords" content="Data Analysis, Machine Learning, Portfolio, CSE, Python, Web Development">
+    <meta name="author" content="Md. Shahidul Islam Prodhan">
+    
+    <title>Md. Shahidul Islam Prodhan - Professional Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#hero" class="navbar-logo">SHAHIDUL</a>
+            
+            <ul class="navbar-menu">
+                <li><a href="#about" class="navbar-link">About</a></li>
+                <li><a href="#education" class="navbar-link">Education</a></li>
+                <li><a href="#experience" class="navbar-link">Experience</a></li>
+                <li><a href="#research" class="navbar-link">Research</a></li>
+                <li><a href="#projects" class="navbar-link">Projects</a></li>
+                <li><a href="#blogs" class="navbar-link">Blogs</a></li>
+                <li><a href="#skills" class="navbar-link">Skills</a></li>
+                <li><a href="#hobbies" class="navbar-link">Hobbies</a></li>
+                <li><a href="#contact" class="navbar-link">Contact</a></li>
+            </ul>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="moon" id="theme-icon" style="width: 20px; height: 20px;"></i>
+                </button>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 1rem;">Hello, I'm</p>
+                    <h1>Md. Shahidul Islam Prodhan</h1>
+                    <h2 class="hero-subtitle">CSE Undergrad & Data Analyst focused on ML/AI</h2>
+                    <p class="hero-description">
+                        A final-year Computer Science & Engineering undergraduate blending a strong foundation in 
+                        <strong>Machine Learning and Data Mining</strong> with expertise in structured documentation 
+                        and business data insights. Driven to optimize processes and deliver measurable value.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">
+                            <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+                            Get In Touch
+                        </a>
+                        <a href="assets/documents/CV.pdf" download class="btn-secondary">
+                            <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="assets/images/profile.png" alt="Md. Shahidul Islam Prodhan" class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    Learn more about my background, journey, and what drives me
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="glass-card glass-card-hover" style="padding: 2rem;">
+                    <div class="about-text">
+                        <p>
+                            I am a final-year B.Sc. student in Computer Science & Engineering from Green University of Bangladesh. 
+                            My academic focus has equipped me with a robust understanding of <strong>Machine Learning, Data Mining, 
+                            and Intelligent Systems</strong>. I have hands-on experience in the entire data pipeline—from collecting 
+                            and cleaning real-world datasets to analyzing trends and generating predictive insights using Python 
+                            (Pandas, scikit-learn).
+                        </p>
+                        <p>
+                            Beyond coding, I have developed strong <strong>structured task management, detailed documentation, and 
+                            cross-team communication</strong> skills through my work at 10 Minute School and 9AM Solution. I am eager 
+                            to apply my analytical mindset to support business process optimization and data-driven decision-making 
+                            in a professional environment.
+                        </p>
+                        <p>
+                            My passion lies in transforming raw data into actionable insights and building intelligent systems that 
+                            solve real-world problems. I'm constantly learning and exploring new technologies to stay at the forefront 
+                            of the rapidly evolving tech landscape.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="glass-card glass-card-hover stat-card">
+                        <div class="stat-number" data-target="4">4+</div>
+                        <div class="stat-label">Years of Study</div>
+                    </div>
+                    <div class="glass-card glass-card-hover stat-card">
+                        <div class="stat-number" data-target="15">15+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="glass-card glass-card-hover stat-card">
+                        <div class="stat-number" data-target="3">3+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="glass-card glass-card-hover stat-card">
+                        <div class="stat-number" data-target="2">2+</div>
+                        <div class="stat-label">Work Experiences</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-description">
+                    My academic journey and qualifications
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- University -->
+                <div class="timeline-item">
+                    <div class="glass-card glass-card-hover timeline-content">
+                        <span class="timeline-date">September 2021 - January 2026</span>
+                        <h3 class="timeline-title">B.Sc. in Computer Science & Engineering (CSE)</h3>
+                        <p class="timeline-organization">Green University of Bangladesh</p>
+                        <div class="timeline-description">
+                            <p><strong>Current CGPA:</strong> 3.02 (Level 4, Term 2)</p>
+                            <p><strong>Relevant Coursework:</strong> Machine Learning, Data Mining, Database Management, Software Engineering, Web Technologies, Artificial Intelligence, Computer Networks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HSC -->
+                <div class="timeline-item">
+                    <div class="glass-card glass-card-hover timeline-content">
+                        <span class="timeline-date">July 2017 - June 2019</span>
+                        <h3 class="timeline-title">Higher Secondary School Certificate (HSC)</h3>
+                        <p class="timeline-organization">Dhaka College</p>
+                        <div class="timeline-description">
+                            <p><strong>Group:</strong> Science</p>
+                            <p><strong>GPA:</strong> 5.00 out of 5.00</p>
+                            <p><strong>Extra Curricular:</strong> Science Club, English Language Club</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SSC School -->
+                <div class="timeline-item">
+                    <div class="glass-card glass-card-hover timeline-content">
+                        <span class="timeline-date">January 2007 - June 2017</span>
+                        <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                        <p class="timeline-organization">A.K High School</p>
+                        <div class="timeline-description">
+                            <p><strong>Group:</strong> Science</p>
+                            <p><strong>GPA:</strong> 5.00 out of 5.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-description">
+                    Professional roles and responsibilities I've undertaken
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- 10 Minute School -->
+                <div class="timeline-item">
+                    <div class="glass-card glass-card-hover timeline-content">
+                        <span class="timeline-date">July 2022 - January 2023</span>
+                        <h3 class="timeline-title">Lecture Content Creator (HSC & SSC)</h3>
+                        <p class="timeline-organization">10 Minute School</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Designed high-quality, visual lecture slides and animations in PowerPoint for HSC and SSC students</li>
+                                <li>Maintained strict structured documentation (Excel/Sheets) for task tracking and deadlines</li>
+                                <li>Collaborated with subject matter experts to ensure content accuracy and engagement</li>
+                                <li>Managed multiple concurrent projects while maintaining quality standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 9AM Solution -->
+                <div class="timeline-item">
+                    <div class="glass-card glass-card-hover timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3 class="timeline-title">Internship Program</h3>
+                        <p class="timeline-organization">9AM Solution (TECHNOQUEST)</p>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed skills in cross-team communication and agile methodologies</li>
+                                <li>Created detailed, accuracy-focused documentation for client requirements</li>
+                                <li>Participated in technical specification writing and business understanding workshops</li>
+                                <li>Gained practical experience in software development lifecycle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESEARCH SECTION ========== -->
+    <section id="research" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research & Publications</h2>
+                <p class="section-description">
+                    Academic research projects and contributions
+                </p>
+            </div>
+            
+            <div class="grid-2">
+                <!-- Dengue Prediction -->
+                <div class="glass-card glass-card-hover project-card">
+                    <div class="project-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <h3 class="project-title">Dengue Case Prediction Model</h3>
+                    <p class="project-description">
+                        Developed an ensemble predictive model (XGBoost, Random Forest) for forecasting weekly dengue 
+                        cases using climate and epidemiological data. Achieved a significant <strong>accuracy increase 
+                        from 24% to 59%</strong> through advanced data preprocessing and feature engineering.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+                            Research Paper
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Medical Assistant System -->
+                <div class="glass-card glass-card-hover project-card">
+                    <div class="project-tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">OCR</span>
+                        <span class="tag">Healthcare</span>
+                    </div>
+                    <h3 class="project-title">ML-Based Medical Assistant System</h3>
+                    <p class="project-description">
+                        Built a terminal and GUI-based system for real-time disease prediction based on symptoms. 
+                        Featured <strong>Tesseract OCR integration</strong> for symptom extraction from medical images, 
+                        greatly improving real-world usability.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                            View Project
+                        </a>
+                        <a href="#" class="project-link">
+                            <i data-lucide="youtube" style="width: 16px; height: 16px;"></i>
+                            Demo Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-description">
+                    Showcase of my technical projects and applications
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <!-- Smart UniAssist -->
+                <div class="glass-card glass-card-hover project-card">
+                    <div class="project-image-container">
+                        <!-- <img src="assets/images/projects/uniassist.jpg" alt="Smart UniAssist" class="project-image"> -->
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-size: 2rem; font-weight: bold;">
+                            UniAssist
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <h3 class="project-title">Smart UniAssist: Academic WebApp</h3>
+                    <p class="project-description">
+                        A comprehensive web application for university students to track academic progress, manage tasks, 
+                        and access personalized course and career recommendations.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i data-lucide="youtube" style="width: 16px; height: 16px;"></i>
+                            Demo
+                        </a>
+                        <a href="#" class="project-link">
+                            <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                            Live Site
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- bKash Case Study -->
+                <div class="glass-card glass-card-hover project-card">
+                    <div class="project-image-container">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; font-size: 2rem; font-weight: bold;">
+                            bKash
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Analysis</span>
+                        <span class="tag">UX</span>
+                        <span class="tag">Business Intelligence</span>
+                    </div>
+                    <h3 class="project-title">bKash App: MFS System Analysis</h3>
+                    <p class="project-description">
+                        Conducted detailed product analysis (SWOT, tech stack) and proposed innovative UX/feature 
+                        improvements like AI-driven financial tools and enhanced fraud detection.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+                            Full Report
+                        </a>
+                        <a href="#" class="project-link">
+                            <i data-lucide="presentation" style="width: 16px; height: 16px;"></i>
+                            Slides
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Data Analysis Project -->
+                <div class="glass-card glass-card-hover project-card">
+                    <div class="project-image-container">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; font-size: 2rem; font-weight: bold;">
+                            Data
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                    <h3 class="project-title">Your Project Title</h3>
+                    <p class="project-description">
+                        Add your project description here. You can showcase data analysis, visualization, 
+                        or any other technical project you've worked on.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video/Presentation Section -->
+            <div style="margin-top: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 2rem; text-align: center;">Project Presentations & Demos</h3>
+                <div class="grid-3">
+                    <!-- Video Placeholder 1 -->
+                    <div class="glass-card glass-card-hover" style="padding: 1rem;">
+                        <div class="video-embed-container">
+                            <!-- Replace with actual YouTube embed -->
+                            <!-- <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe> -->
+                            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-secondary);">
+                                <div style="text-align: center;">
+                                    <i data-lucide="youtube" style="width: 48px; height: 48px; color: var(--accent-primary);"></i>
+                                    <p style="margin-top: 1rem; color: var(--text-secondary);">Embed YouTube Video</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="margin-top: 1rem; font-size: 1rem;">Project Presentation Title</h4>
+                    </div>
+                    
+                    <!-- Video Placeholder 2 -->
+                    <div class="glass-card glass-card-hover" style="padding: 1rem;">
+                        <div class="video-embed-container">
+                            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-secondary);">
+                                <div style="text-align: center;">
+                                    <i data-lucide="video" style="width: 48px; height: 48px; color: var(--accent-primary);"></i>
+                                    <p style="margin-top: 1rem; color: var(--text-secondary);">Screen Recording</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="margin-top: 1rem; font-size: 1rem;">Demo Video Title</h4>
+                    </div>
+                    
+                    <!-- Video Placeholder 3 -->
+                    <div class="glass-card glass-card-hover" style="padding: 1rem;">
+                        <div class="video-embed-container">
+                            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--bg-secondary);">
+                                <div style="text-align: center;">
+                                    <i data-lucide="presentation" style="width: 48px; height: 48px; color: var(--accent-primary);"></i>
+                                    <p style="margin-top: 1rem; color: var(--text-secondary);">Presentation Slides</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 style="margin-top: 1rem; font-size: 1rem;">Presentation Title</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOGS SECTION ========== -->
+    <section id="blogs" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Blog Posts</h2>
+                <p class="section-description">
+                    Thoughts, tutorials, and insights on technology and data science
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <!-- Blog Post 1 -->
+                <a href="#" class="blog-card glass-card glass-card-hover">
+                    <div class="blog-image-container">
+                        <!-- <img src="assets/images/blogs/post1.jpg" alt="Blog Post" class="blog-image"> -->
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                            <i data-lucide="book-open" style="width: 64px; height: 64px;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> Dec 4, 2025</span>
+                            <span><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Getting Started with Machine Learning</h3>
+                        <p class="blog-excerpt">
+                            A comprehensive guide for beginners looking to enter the world of machine learning 
+                            and data science...
+                        </p>
+                        <span class="blog-read-more">
+                            Read More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Blog Post 2 -->
+                <a href="#" class="blog-card glass-card glass-card-hover">
+                    <div class="blog-image-container">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                            <i data-lucide="code-2" style="width: 64px; height: 64px;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> Nov 28, 2025</span>
+                            <span><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Data Preprocessing Best Practices</h3>
+                        <p class="blog-excerpt">
+                            Learn the essential techniques for cleaning and preparing data for machine learning models...
+                        </p>
+                        <span class="blog-read-more">
+                            Read More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </span>
+                    </div>
+                </a>
+                
+                <!-- Blog Post 3 -->
+                <a href="#" class="blog-card glass-card glass-card-hover">
+                    <div class="blog-image-container">
+                        <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                            <i data-lucide="brain" style="width: 64px; height: 64px;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> Nov 15, 2025</span>
+                            <span><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 10 min read</span>
+                        </div>
+                        <h3 class="blog-title">Your Blog Post Title</h3>
+                        <p class="blog-excerpt">
+                            Add your blog post excerpt here. Share your knowledge and insights with the community...
+                        </p>
+                        <span class="blog-read-more">
+                            Read More <i data-lucide="arrow-right" style="width: 14px; height: 14px;"></i>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    Technical skills and tools I work with
+                </p>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Data Science & ML -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="brain" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Data Science & ML
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Python
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Pandas
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Scikit-learn
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            XGBoost
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            TensorFlow
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            NumPy
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Data Visualization -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="bar-chart-3" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Data Visualization
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Matplotlib
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Seaborn
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Plotly
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Excel
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Power BI
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="code-2" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Web Development
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            React
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            JavaScript
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            HTML/CSS
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Django
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Tailwind CSS
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="terminal" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Python
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            C/C++
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Java
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            JavaScript
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            SQL
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="wrench" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Git/GitHub
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            VS Code
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Jupyter
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            LaTeX
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Google Suite
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="glass-card glass-card-hover skill-category">
+                    <h3 class="skill-category-title">
+                        <i data-lucide="users" style="width: 24px; height: 24px; color: var(--accent-primary);"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Documentation
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Team Collaboration
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Problem Solving
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Communication
+                        </span>
+                        <span class="skill-tag">
+                            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+                            Agile Methods
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOBBIES SECTION ========== -->
+    <section id="hobbies" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hobbies & Interests</h2>
+                <p class="section-description">
+                    Beyond code - activities that inspire and rejuvenate me
+                </p>
+            </div>
+            
+            <!-- Tours & Photography -->
+            <div style="margin-bottom: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                    <i data-lucide="camera" style="width: 28px; height: 28px; color: var(--accent-primary);"></i>
+                    Tours & Photography
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px;">
+                    Travel and photography provide a necessary creative outlet, refreshing the mind for complex 
+                    analytical work. Exploring new places and capturing moments helps me maintain a balanced perspective.
+                </p>
+                
+                <div class="media-gallery">
+                    <!-- Photo 1 -->
+                    <div class="glass-card media-item">
+                        <img src="assets/images/tours/IMG_20250611_172711.jpg" alt="Tour Photo">
+                        <div class="media-caption">Adventure Moments</div>
+                    </div>
+                    
+                    <!-- Photo 2 -->
+                    <div class="glass-card media-item">
+                        <img src="assets/images/tours/PXL_20250611_113803519.jpg" alt="Travel Photo">
+                        <div class="media-caption">Beautiful Scenes</div>
+                    </div>
+                    
+                    <!-- Photo 3 -->
+                    <div class="glass-card media-item">
+                        <img src="assets/images/hobbies/IMG_20210925_132050_927.jpg" alt="Hobby Photo">
+                        <div class="media-caption">My Hobbies</div>
+                    </div>
+                    
+                    <!-- Photo 4 -->
+                    <div class="glass-card media-item">
+                        <img src="assets/images/tours/IMG_20250611_171537.jpg" alt="Tour Moment">
+                        <div class="media-caption">Travel Memories</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Hobbies -->
+            <div class="grid-2">
+                <div class="glass-card glass-card-hover" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-lucide="book-open" style="width: 32px; height: 32px; color: var(--accent-primary);"></i>
+                        <h3 style="font-size: 1.5rem;">Reading & Learning</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        I'm passionate about continuous learning, reading tech blogs, research papers, and books on 
+                        AI, data science, and personal development. Staying curious and updated with the latest trends 
+                        is essential in the rapidly evolving tech landscape.
+                    </p>
+                </div>
+                
+                <div class="glass-card glass-card-hover" style="padding: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                        <i data-lucide="gamepad-2" style="width: 32px; height: 32px; color: var(--accent-primary);"></i>
+                        <h3 style="font-size: 1.5rem;">Gaming & Strategy</h3>
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">
+                        Strategic games help me develop problem-solving skills and logical thinking. Gaming provides 
+                        a perfect balance between relaxation and mental stimulation, enhancing my analytical abilities.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- University Campus Life Gallery -->
+            <div style="margin-top: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                    <i data-lucide="school" style="width: 28px; height: 28px; color: var(--accent-primary);"></i>
+                    University & Campus Life
+                </h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Capturing moments from my academic journey at Green University of Bangladesh - 
+                    competitions, events, and everyday campus life.
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;">
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/At Campus.jpg" alt="Campus Life">
+                        <div class="media-caption">At Campus</div>
+                    </div>
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/At Campus - computer lab.jpeg" alt="Computer Lab">
+                        <div class="media-caption">Computer Lab</div>
+                    </div>
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/At Campus - library.jpg" alt="Library">
+                        <div class="media-caption">Library Study</div>
+                    </div>
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/google io extended dhaka 2023 at IUB.jpg" alt="Google IO Extended">
+                        <div class="media-caption">Google IO Extended</div>
+                    </div>
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/Boishakh Day.jpg" alt="Boishakh Day">
+                        <div class="media-caption">Boishakh Day</div>
+                    </div>
+                    <div class="glass-card media-item">
+                        <img src="assets/images/university/cricket tournament day 2024.jpg" alt="Cricket Tournament">
+                        <div class="media-caption">Sports Event</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div style="margin-top: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;">
+                    <i data-lucide="award" style="width: 28px; height: 28px; color: var(--accent-primary);"></i>
+                    Certifications & Achievements
+                </h3>
+                
+                <div class="glass-card glass-card-hover" style="padding: 2rem;">
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Certified: Prompting with Microsoft Copilot</strong> - Microsoft, 2024
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Online Coursework in Web Development</strong> - Programming-Hero, Ongoing
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Integrated Design Project Competition</strong> - Participated in IDP 1 & 2 poster showcase, 2024
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>New Models of Business in Society</strong> - Coursera Course Completion, 2020
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>International Youth Math Olympiad (IYMO)</strong> - Participant, 2020
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: start; gap: 1rem;">
+                            <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--accent-primary); flex-shrink: 0; margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Language Skill: Elementary German (A1)</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-description">
+                    I am actively seeking opportunities in Data Analytics, ML, and Software Development.<br>
+                    Reach out to discuss my projects or potential roles.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p><a href="mailto:shahidulprodhan2000@gmail.com" style="color: var(--accent-primary);">shahidulprodhan2000@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="linkedin" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://linkedin.com/in/theshahidul/" target="_blank" style="color: var(--accent-primary);">linkedin.com/in/theshahidul</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="github" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/TheShahidul" target="_blank" style="color: var(--accent-primary);">github.com/TheShahidul</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon">
+                            <i data-lucide="bar-chart" style="width: 24px; height: 24px;"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Kaggle</h4>
+                            <p><a href="https://www.kaggle.com/theshahidul" target="_blank" style="color: var(--accent-primary);">kaggle.com/theshahidul</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Links Card -->
+                <div>
+                    <div class="glass-card" style="padding: 2rem; height: 100%;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">Follow Me</h3>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/theshahidul/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i data-lucide="linkedin" style="width: 24px; height: 24px;"></i>
+                            </a>
+                            <a href="https://github.com/TheShahidul" target="_blank" class="social-link" aria-label="GitHub">
+                                <i data-lucide="github" style="width: 24px; height: 24px;"></i>
+                            </a>
+                            <a href="https://www.kaggle.com/theshahidul" target="_blank" class="social-link" aria-label="Kaggle">
+                                <i data-lucide="bar-chart" style="width: 24px; height: 24px;"></i>
+                            </a>
+                            <a href="https://twitter.com/theshahidul" target="_blank" class="social-link" aria-label="Twitter">
+                                <i data-lucide="twitter" style="width: 24px; height: 24px;"></i>
+                            </a>
+                            <a href="mailto:shahidulprodhan2000@gmail.com" class="social-link" aria-label="Email">
+                                <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+                            </a>
+                        </div>
+                        
+                        <div style="margin-top: 3rem; text-align: center;">
+                            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                Download my resume to learn more about my qualifications
+                            </p>
+                            <a href="assets/documents/CV.pdf" download class="btn-primary" style="display: inline-flex;">
+                                <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <i data-lucide="arrow-up" style="width: 24px; height: 24px;"></i>
+    </button>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About This Portfolio</h4>
+                    <p style="color: var(--text-secondary); line-height: 1.7;">
+                        A professional portfolio showcasing my journey in data science, machine learning, 
+                        and software development. Built with modern web technologies and glassmorphism design.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Technologies Used</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (Vanilla)</li>
+                        <li>Glassmorphism Design</li>
+                        <li>Lucide Icons</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>
+                    &copy; <span id="copyright-year">2025</span> Md. Shahidul Islam Prodhan. 
+                    All rights reserved. | Built with passion for excellence.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
