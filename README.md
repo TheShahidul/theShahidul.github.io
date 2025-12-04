@@ -280,7 +280,7 @@ The portfolio uses Lucide Icons. Browse available icons at [lucide.dev](https://
 ## 🤝 Support & Contact
 
 If you need help or have questions:
-- Email: nahidulprodhan2000@gmail.com
+- Email: shahidulprodhan2000@gmail.com
 - LinkedIn: [linkedin.com/in/theshahidul](https://linkedin.com/in/theshahidul/)
 - GitHub: [github.com/TheShahidul](https://github.com/TheShahidul)
 
